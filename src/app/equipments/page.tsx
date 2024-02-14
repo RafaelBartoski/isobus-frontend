@@ -124,6 +124,15 @@ export default function Login() {
                         Data de Envio
                      </th>
                      <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Latitude
+                     </th>
+                     <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Longitude
+                     </th>
+                     <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Velocidade
+                     </th>
+                     <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Endereço ISObus
                      </th>
                      {[0, 1, 2, 3, 4, 5, 6, 7].map((byte) => (
@@ -142,6 +151,9 @@ export default function Login() {
                      <tr key={index}>
                         <td className="px-6 py-4 whitespace-nowrap">{item.createdAt}</td>
                         <td className="px-6 py-4 whitespace-nowrap">{item.dataDadoIsobus}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{item.latitude}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{item.longitude}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{item.velocidade}</td>
                         <td className="px-6 py-4 whitespace-nowrap">{item.idCanIsobus}</td>
                         <td
                            className="px-6 py-4 whitespace-nowrap"
