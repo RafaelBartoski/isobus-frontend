@@ -124,13 +124,19 @@ export default function Login() {
                         Data de Envio
                      </th>
                      <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Latitude
+                        Latitude Envio
                      </th>
                      <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Longitude
+                        Longitude Envio
                      </th>
                      <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Velocidade
+                        Latitude Dado
+                     </th>
+                     <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Longitude Dado
+                     </th>
+                     <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Velocidade Dado
                      </th>
                      <th scope="col" className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Endereço ISObus
@@ -151,9 +157,11 @@ export default function Login() {
                      <tr key={index}>
                         <td className="px-6 py-4 whitespace-nowrap">{item.createdAt}</td>
                         <td className="px-6 py-4 whitespace-nowrap">{item.dataDadoIsobus}</td>
-                        <td className="px-6 py-4 whitespace-nowrap">{item.latitude}</td>
-                        <td className="px-6 py-4 whitespace-nowrap">{item.longitude}</td>
-                        <td className="px-6 py-4 whitespace-nowrap">{item.velocidade}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{item.latitudeEnvio}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{item.longitudeEnvio}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{item.latitudeDado}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{item.longitudeDado}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{item.velocidadeDado}</td>
                         <td className="px-6 py-4 whitespace-nowrap">{item.idCanIsobus}</td>
                         <td
                            className="px-6 py-4 whitespace-nowrap"
